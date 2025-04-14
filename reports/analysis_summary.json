@@ -1,0 +1,30 @@
+{
+    "quadratic_coverage": {
+        "success": false,
+        "execution_time": 0.5365636348724365,
+        "error": "Failed to generate or parse coverage data."
+    },
+    "quadratic_mutation": {
+        "success": false,
+        "execution_time": 0.031403303146362305,
+        "error": "Mutation testing failed with exit code 1. Stderr: D:\\LeStoreDownload\\CodeWare\\python\\python.exe: No module named mutpy.__main__; 'mutpy' is a package and cannot be directly executed\n",
+        "mutation_score": 0,
+        "killed_mutants": null,
+        "total_mutants": null
+    },
+    "date_coverage": {
+        "success": true,
+        "execution_time": 0.5111982822418213,
+        "error": null,
+        "line_coverage": 100.0,
+        "branch_coverage": 100.0
+    },
+    "date_mutation": {
+        "success": false,
+        "execution_time": 0.02740788459777832,
+        "error": "Mutation testing failed with exit code 1. Stderr: D:\\LeStoreDownload\\CodeWare\\python\\python.exe: No module named mutpy.__main__; 'mutpy' is a package and cannot be directly executed\n",
+        "mutation_score": 0,
+        "killed_mutants": null,
+        "total_mutants": null
+    }
+}

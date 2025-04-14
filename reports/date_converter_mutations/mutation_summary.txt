@@ -1,0 +1,7 @@
+Mutation Testing Summary for src.case_studies.date_converter
+--------------------------------------------------
+Error: Mutation testing failed with exit code 1. Stderr: D:\LeStoreDownload\CodeWare\python\python.exe: No module named mutpy.__main__; 'mutpy' is a package and cannot be directly executed
+
+STDOUT: 
+STDERR: D:\LeStoreDownload\CodeWare\python\python.exe: No module named mutpy.__main__; 'mutpy' is a package and cannot be directly executed
+

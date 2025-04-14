@@ -1,0 +1,202 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Automated Test Generation Summary Report</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                    background-color: #f5f5f5;
+                    color: #333;
+                }
+                h1, h2, h3 {
+                    color: #2c3e50;
+                }
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+                .card {
+                    background: white;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    margin-bottom: 20px;
+                    padding: 20px;
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    margin: 15px 0;
+                }
+                th, td {
+                    border: 1px solid #ddd;
+                    padding: 12px;
+                    text-align: left;
+                }
+                th {
+                    background-color: #f2f2f2;
+                }
+                .chart-container {
+                    margin: 20px 0;
+                    text-align: center;
+                }
+                .chart-container img {
+                    max-width: 100%;
+                    height: auto;
+                    border: 1px solid #ddd;
+                    border-radius: 4px;
+                }
+                .summary-box {
+                    background-color: #e8f4fd;
+                    border-left: 4px solid #2196F3;
+                    padding: 15px;
+                    margin: 15px 0;
+                }
+                .technique-box {
+                    margin-top: 10px;
+                    padding: 15px;
+                    background-color: #f9f9f9;
+                    border-radius: 4px;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1>Automated Test Generation Summary Report</h1>
+                
+                <div class="card">
+                    <h2>Test Generation Summary</h2>
+                    <div class="summary-box">
+                        <p><strong>Total Quadratic Equation Test Cases:</strong> 20</p>
+                        <p><strong>Total Date Conversion Test Cases:</strong> 686</p>
+                        <p><strong>Total Execution Time:</strong> 3.31 seconds</p>
+                    </div>
+                    
+                    <div class="technique-box">
+                        <h3>Z-Solver Technique for Quadratic Equations</h3>
+                        <p>Z-Solver uses mathematical constraints to generate test cases that cover different scenarios for the quadratic equation solver, including real roots, complex roots, and special cases.</p>
+                        <div class="chart-container">
+                            <img src="visualizations/quadratic_distribution.png" alt="Quadratic Test Case Distribution">
+                        </div>
+                    </div>
+                    
+                    <div class="technique-box">
+                        <h3>Category-Partition Technique for Date Conversion</h3>
+                        <p>Category-Partition divides the input space into categories and values, generating test cases by combining these values while respecting constraints.</p>
+                        <div class="chart-container">
+                            <img src="visualizations/date_distribution.png" alt="Date Test Case Distribution">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2>Code Coverage Analysis</h2>
+                    <table>
+                        <tr>
+                            <th>Module</th>
+                            <th>Line Coverage</th>
+                            <th>Branch Coverage</th>
+                        </tr>
+        
+                        <tr>
+                            <td>quadratic_solver</td>
+                            <td>94.44%</td>
+                            <td>91.67%</td>
+                        </tr>
+            
+                        <tr>
+                            <td>date_converter</td>
+                            <td>100.00%</td>
+                            <td>100.00%</td>
+                        </tr>
+            
+                    </table>
+                    
+                    <div class="chart-container">
+                        <img src="visualizations/coverage_comparison.png" alt="Coverage Comparison">
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2>Mutation Testing Results</h2>
+                    <p>Mutation testing measures the effectiveness of tests by introducing small changes (mutations) to the code and checking if tests can detect these changes.</p>
+                    
+                    <table>
+                        <tr>
+                            <th>Module</th>
+                            <th>Mutation Score</th>
+                            <th>Execution Time</th>
+                        </tr>
+        
+                        <tr>
+                            <td>quadratic_solver</td>
+                            <td>85.00%</td>
+                            <td>0.18 seconds</td>
+                        </tr>
+            
+                        <tr>
+                            <td>date_converter</td>
+                            <td>85.00%</td>
+                            <td>0.23 seconds</td>
+                        </tr>
+            
+                    </table>
+                    
+                    <div class="chart-container">
+                        <img src="visualizations/mutation_scores.png" alt="Mutation Scores">
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h2>Performance Comparison</h2>
+                    <div class="chart-container">
+                        <img src="visualizations/execution_times.png" alt="Execution Times">
+                    </div>
+                    
+                    <h3>Technique Comparison</h3>
+                    <table>
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Z-Solver (Quadratic)</th>
+                            <th>Category-Partition (Date)</th>
+                        </tr>
+                        <tr>
+                            <td>Test Count</td>
+                            <td>20</td>
+                            <td>686</td>
+                        </tr>
+                        <tr>
+                            <td>Line Coverage</td>
+                            <td>94.44%</td>
+                            <td>100.00%</td>
+                        </tr>
+                        <tr>
+                            <td>Mutation Score</td>
+                            <td>85.00%</td>
+                            <td>85.00%</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="card">
+                    <h2>Conclusion and Insights</h2>
+                    <p>This report presents a comparison of two automated test generation techniques applied to different case studies:</p>
+                    <ul>
+                        <li><strong>Z-Solver for Quadratic Equation Solver:</strong> Generated 20 test cases covering various scenarios with 94.44% line coverage and 85.00% mutation score.</li>
+                        <li><strong>Category-Partition for Date Converter:</strong> Generated 686 test cases with 100.00% line coverage and 85.00% mutation score.</li>
+                    </ul>
+                    
+                    <div class="summary-box">
+                        <h3>Key Findings:</h3>
+                        <p>Both techniques were effective for their respective case studies, with high code coverage and mutation scores, indicating good fault detection capability. Z-Solver is particularly well-suited for mathematical problems with clear constraints, while Category-Partition excels at testing systems with distinct input categories.</p>
+                    </div>
+                </div>
+                
+                <footer style="text-align: center; margin-top: 30px; padding: 20px; color: #777; font-size: 0.9em;">
+                    Generated on 2025-04-14 04:12:59 | SYSC 5807 - Automated Test Case Generation Project
+                </footer>
+            </div>
+        </body>
+        </html>
+        
