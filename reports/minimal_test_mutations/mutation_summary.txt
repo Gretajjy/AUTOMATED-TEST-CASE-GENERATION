@@ -1,8 +1,0 @@
-Mutation Testing Summary for minimal_test.simple_func
---------------------------------------------------
-Mutation Score: 85.0%
-Generated Mutants: 20
-Killed Mutants: 17
-Survived Mutants: 3
-
-Note: This is a simulated report as the MutPy tool encountered execution issues.
